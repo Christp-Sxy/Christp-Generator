@@ -19,7 +19,7 @@ public class ASCIIArt implements Runnable {
     int fontSize = 19;
 
     @CommandLine.Parameters(paramLabel = "<word>", defaultValue = "Hello, picocli", description = "Words to be translated into ASCII att.")
-    private String[] words = {"Hello,", "picocli"};
+    private final String[] words = {"Hello,", "picocli"};
 
     @Override
     public void run() {
